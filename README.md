@@ -57,7 +57,7 @@ The decisions that were not obvious:
 
 **Type is measured, not guessed.** The shutter reveal reads the loaded font’s real cap metrics after `document.fonts.ready`, so the closing line sits on the letterforms instead of near them.
 
-**Privacy by construction.** No cookies, no browser storage, no analytics, and no request to any third-party server — verified across every page. Remote CMS images are proxied through `next/image`, so a visitor’s browser never talks to the CDN.
+**Privacy by construction.** No cookies, nothing written to browser storage, and no request to any third-party server — measured across every page rather than assumed. Visits are counted, by Vercel Web Analytics, but the script is served from this domain, touches no storage API, and carries no absolute URL, so the event cannot leave the origin. Remote CMS images are proxied through `next/image`, so a visitor’s browser never talks to the CDN either.
 
 **The fiction stops at the structured data.** JSON-LD carries no invented postal addresses, telephone numbers, founding dates or headcounts, because that markup is addressed to machines that cannot read a disclaimer. The fictional email and telephone links open a note explaining the piece instead of a mail client — which also means none of the invented numbers can actually be dialled.
 
@@ -78,6 +78,7 @@ The decisions that were not obvious:
 | Mail | Resend (EU region) |
 | Icons | lucide-react |
 | Hosting | Vercel |
+| Analytics | Vercel Web Analytics — first-party, cookieless |
 
 Fonts are self-hosted variable `woff2` files — Gambetta for display, Satoshi for text.
 
