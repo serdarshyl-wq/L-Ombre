@@ -1,0 +1,52 @@
+@layer base {
+
+  [data-rise] {
+    opacity: 0;
+  }
+
+  [data-in] {
+    opacity: 0;
+  }
+
+  [data-mask] [data-line] {
+    transform: translateY(110%);
+  }
+
+  [data-mask="left"] [data-line] {
+    transform: translateX(-105%);
+  }
+
+  [data-shutter] [data-line] {
+    clip-path: inset(50% 0% 50% 0%);
+  }
+
+  [data-wipe] {
+    clip-path: inset(0% 100% 0% 0%);
+  }
+
+  [data-curtain] [data-sheet] {
+    transform: translateY(-100%);
+  }
+
+  [data-curtain] [data-still] {
+    transform: translateY(100%);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    [data-rise],
+    [data-in] {
+      opacity: 1;
+    }
+
+    [data-mask] [data-line],
+    [data-curtain] [data-sheet],
+    [data-curtain] [data-still] {
+      transform: none;
+    }
+
+    [data-shutter] [data-line],
+    [data-wipe] {
+      clip-path: none;
+    }
+  }
+}

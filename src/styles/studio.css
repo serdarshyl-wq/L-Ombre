@@ -1,0 +1,30 @@
+@layer components {
+
+  .stack__panel {
+    @apply min-h-svh border-t border-hairline bg-obsidian;
+  }
+
+  .stack__inner {
+    @apply flex h-full min-h-svh flex-col
+      gap-[clamp(2rem,6vh,4rem)] px-gutter
+      pt-[calc(var(--nav-h)+clamp(1rem,3vh,2rem))]
+      pb-[clamp(2.5rem,8vh,5rem)];
+  }
+
+  .stack[data-pinned="true"] {
+    @apply h-[320svh];
+  }
+
+  .stack[data-pinned="true"] .stack__frame {
+    @apply sticky top-0 h-svh overflow-clip;
+  }
+
+  .stack[data-pinned="true"] .stack__list,
+  .stack[data-pinned="true"] .stack__panel {
+    @apply absolute inset-0;
+  }
+
+  .stack[data-pinned="true"] .stack__panel {
+    @apply will-change-transform;
+  }
+}

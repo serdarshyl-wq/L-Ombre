@@ -1,0 +1,110 @@
+@layer components {
+
+  .stage {
+    @apply relative h-[700svh] max-tablet:h-[460svh];
+  }
+
+  .stage__frame {
+    @apply sticky top-0 h-lvh overflow-clip;
+  }
+
+  .threshold {
+    @apply absolute inset-0;
+  }
+
+  .plate {
+    @apply absolute inset-0 p-gutter;
+  }
+
+  .plate--bone {
+    @apply text-bone;
+  }
+
+  .plate--obsidian {
+    @apply text-obsidian;
+  }
+
+  .plate__rail {
+    @apply absolute inset-x-gutter top-[calc(var(--nav-h)+0.5rem)]
+      flex items-start justify-between gap-[clamp(1.5rem,6vw,6rem)];
+  }
+
+
+  .plate__rail--foot {
+    @apply top-auto items-end
+      bottom-[calc(100lvh-100svh+var(--spacing-gutter))];
+  }
+
+  .plate__sig,
+  .plate__meta,
+  .plate__cue {
+    @apply text-[clamp(0.6875rem,0.9vw,0.8125rem)] tracking-[0.22em] uppercase
+      whitespace-nowrap opacity-55;
+  }
+
+  .plate__lede {
+    @apply max-w-[32ch] text-[clamp(0.875rem,1.1vw,1.0625rem)] leading-normal
+      opacity-70;
+  }
+
+  .plate__cue {
+    @apply inline-flex items-center gap-2;
+  }
+
+  .plate__cue-icon {
+    @apply h-[1em] w-[1em];
+  }
+
+  .plate__center {
+    @apply absolute inset-x-gutter top-1/2 grid place-items-center
+      transform-[translateY(-50%)];
+  }
+
+  .plate__slogan,
+  .plate__mark {
+    @apply [grid-area:1/1] font-display leading-none whitespace-nowrap
+      text-center;
+  }
+
+  .plate__slogan,
+  .plate__mark {
+    @apply [clip-path:inset(50%_0%_50%_0%)] will-change-[clip-path];
+  }
+
+  .plate__slogan {
+    @apply text-[clamp(2.25rem,10vw,11rem)] font-normal tracking-[-0.015em];
+  }
+
+  .plate__slogan:first-child {
+    @apply [clip-path:inset(-20%_0%_-20%_0%)];
+  }
+
+  .plate__mark {
+    @apply text-[clamp(4rem,23vw,25rem)] font-[350] tracking-[-0.035em];
+  }
+
+
+  .curtain {
+    @apply absolute inset-x-0 z-10 overflow-clip bg-bone will-change-transform;
+  }
+
+  .curtain--top {
+    @apply top-0 h-1/2;
+  }
+
+  .curtain--bottom {
+    @apply top-1/2 bottom-0;
+  }
+
+  .curtain__inner {
+    @apply absolute inset-x-0 h-[200%] will-change-transform;
+  }
+
+  .curtain--top .curtain__inner {
+    @apply top-0;
+  }
+
+  .curtain--bottom .curtain__inner {
+    @apply bottom-0;
+  }
+}

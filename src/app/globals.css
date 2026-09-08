@@ -1,26 +1,81 @@
+
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import "../styles/navbar.css";
+@import "../styles/intro.css";
+@import "../styles/selection.css";
+@import "../styles/project-page.css";
+@import "../styles/video-controls.css";
+@import "../styles/project-details.css";
+@import "../styles/reveal.css";
+@import "../styles/studio.css";
+@import "../styles/footer.css";
+@import "../styles/contact.css";
+@import "../styles/colophon.css";
+@import "../styles/legal.css";
+
+@theme {
+
+  --color-obsidian: #0f0f0f;
+  --color-bone: #f3f2ed;
+
+  --color-background: var(--color-obsidian);
+  --color-foreground: var(--color-bone);
+
+  --color-hairline: #3a3a3a;
+
+  --font-display: var(--font-gambetta), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-satoshi), system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif;
+
+  --spacing-gutter: clamp(1.25rem, 3vw, 2.5rem);
+
+  --breakpoint-mobile: 768px;
+  --breakpoint-tablet: 1280px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    --nav-h: clamp(4.25rem, 5vw, 5.5rem);
+  }
+
+  html {
+    color-scheme: dark;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html,
+  body {
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+  }
+
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+  }
+
+  ::selection {
+    background-color: var(--color-bone);
+    color: var(--color-obsidian);
+  }
 }

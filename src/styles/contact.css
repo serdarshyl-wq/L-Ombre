@@ -1,0 +1,84 @@
+@layer components {
+
+
+  .ct__row {
+    @apply relative flex flex-col items-center
+      py-[clamp(0.35rem,1.2vh,0.8rem)]
+      transition-transform duration-700 ease-[cubic-bezier(0.65,0,0.35,1)]
+      motion-reduce:transition-none;
+  }
+
+  .ct__row[data-open="true"] ~ .ct__row {
+    @apply translate-y-(--shift);
+  }
+
+  .ct__city {
+    @apply relative font-display text-[clamp(1.75rem,5vw,4.25rem)]
+      leading-none font-[350] tracking-tight text-bone/75 uppercase
+      transition-colors duration-500 ease-[ease] motion-reduce:transition-none;
+  }
+
+  .ct__row[data-open="true"] .ct__city {
+    @apply text-bone;
+  }
+
+  .ct__meta {
+    @apply absolute top-[calc(100%+clamp(0.5rem,1.4vh,1rem))] left-1/2 grid
+      w-max -translate-x-1/2 grid-cols-[1.6em_auto] gap-x-[0.9em]
+      gap-y-[0.35em] text-left leading-[1.4] text-bone/60
+      text-[clamp(0.625rem,0.8vw,0.75rem)] tracking-[0.22em] uppercase
+      opacity-0 transition-opacity duration-300 ease-[ease]
+      motion-reduce:transition-none;
+  }
+
+  .ct__row[data-open="true"] .ct__meta {
+    @apply opacity-100 delay-300 duration-500;
+  }
+
+  @media (hover: hover) {
+    .ct__row:hover ~ .ct__row {
+      @apply translate-y-(--shift);
+    }
+
+    .ct__row:hover .ct__city {
+      @apply text-bone;
+    }
+
+    .ct__row:hover .ct__meta,
+    .ct__row:focus-within .ct__meta {
+      @apply opacity-100 delay-300 duration-500;
+    }
+  }
+
+  /* Dokunmatiğin tetiği: satırın tamamını kaplayan görünmez düğme.
+
+     `z-10` şart. Düğme DOM'da içerikten önce geliyor — sekme sırası doğru
+     olsun, açtığı künye ondan sonra gelsin diye. Konumlu kardeşlerde ise
+     sonraki eleman üstte boyanıyor, yani şehir adı dokunuşu yiyordu.
+     Ölçtük.
+
+     Künye satırın kutusunun ALTINDA açılıyor, yani düğmenin dışında
+     kalıyor: telefon ve e-posta bağlantılarına açıkken doğrudan
+     dokunulabiliyor. */
+  .ct__toggle {
+    @apply absolute inset-0 z-10 cursor-pointer;
+  }
+
+  .ct__sweep,
+  .ct__link {
+    @apply relative inline-block
+      after:absolute after:inset-x-0 after:bottom-[-0.12em] after:h-px
+      after:origin-right after:scale-x-0 after:bg-current after:content-['']
+      after:transition-transform after:duration-500
+      after:ease-[cubic-bezier(0.65,0,0.35,1)]
+      hover:after:origin-left hover:after:scale-x-100
+      focus-visible:after:origin-left focus-visible:after:scale-x-100
+      motion-reduce:after:transition-none;
+  }
+
+  .ct__link {
+    @apply opacity-70 transition-opacity duration-300 ease-[ease]
+      hover:opacity-100 focus-visible:opacity-100;
+  }
+}
+

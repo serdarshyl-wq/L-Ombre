@@ -1,0 +1,87 @@
+@layer components {
+  .legal {
+    @apply px-gutter pt-[clamp(2rem,7vh,4.5rem)] pb-[clamp(5rem,14vh,10rem)];
+  }
+
+  .legal__head {
+    @apply border-b border-hairline pb-[clamp(2rem,6vh,3.5rem)];
+  }
+
+  .legal__kicker {
+    @apply text-[clamp(0.625rem,0.8vw,0.75rem)] tracking-[0.22em] uppercase
+      text-bone/45;
+  }
+
+  .legal__title {
+    @apply mt-[clamp(1rem,3vh,2rem)] font-display
+      text-[clamp(2.5rem,8vw,7rem)] leading-[0.92] font-[350]
+      tracking-[-0.03em] uppercase;
+  }
+
+  .legal__lede {
+    @apply mt-[clamp(1.25rem,4vh,2.5rem)] max-w-[34em] font-display
+      text-[clamp(1.125rem,2.2vw,1.75rem)] leading-[1.35] font-[350]
+      tracking-[-0.015em] text-bone/85 text-balance;
+  }
+
+  .legal__updated {
+    @apply mt-[clamp(1rem,3vh,1.75rem)]
+      text-[clamp(0.625rem,0.8vw,0.75rem)] tracking-[0.22em] uppercase
+      text-bone/35;
+  }
+
+  /* Bölüm numaraları sayaçtan: sıra değişirse metne dokunmak gerekmiyor. */
+  .legal__body {
+    counter-reset: legal;
+  }
+
+  /* Geniş ekranda başlık solda kendi kolonunda, metin sağda. Dar ekranda
+     başlık metnin üstüne geçiyor. */
+  .legal__section {
+    counter-increment: legal;
+
+    @apply grid grid-cols-[minmax(0,13rem)_minmax(0,1fr)]
+      gap-x-[clamp(1.5rem,4vw,4rem)] gap-y-[clamp(0.75rem,2vh,1.25rem)]
+      border-b border-hairline py-[clamp(2rem,6vh,3.5rem)]
+      max-[900px]:grid-cols-1;
+  }
+
+  .legal__section-title {
+    @apply font-display text-[clamp(1.125rem,1.6vw,1.5rem)] leading-[1.2]
+      font-[350] tracking-[-0.015em] text-balance;
+  }
+
+  /* Sayaç düz CSS: Tailwind'in `before:` varyantı `content`i kendi
+     değişkeni üzerinden yazıyor ve ham bir `content` bildirimi eziliyor —
+     ölçtük, numaralar hiç görünmedi. */
+  .legal__section-title::before {
+    content: counter(legal, decimal-leading-zero);
+
+    @apply mr-[0.6em] text-[0.65em] tracking-[0.22em] text-bone/30;
+  }
+
+  .legal__prose {
+    @apply max-w-[34em] text-[clamp(0.9375rem,1.15vw,1.125rem)] leading-[1.8]
+      text-bone/70 text-pretty;
+  }
+
+  .legal__prose p + p {
+    @apply mt-[clamp(1rem,2.6vh,1.6rem)];
+  }
+
+  .legal__prose strong {
+    @apply font-medium text-bone;
+  }
+
+  /* Journal ve footer'daki jestin aynısı: çizgi imleç girerken soldan
+     büyüyor, çıkarken sağa doğru siliniyor. */
+  .legal__prose a {
+    @apply relative inline-block text-bone
+      after:absolute after:inset-x-0 after:bottom-[-0.08em] after:h-px
+      after:origin-right after:scale-x-100 after:bg-current
+      after:content-[''] after:transition-transform after:duration-500
+      after:ease-[cubic-bezier(0.65,0,0.35,1)]
+      hover:after:origin-left hover:after:scale-x-0
+      motion-reduce:after:transition-none;
+  }
+}

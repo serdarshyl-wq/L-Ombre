@@ -1,0 +1,14 @@
+{
+  // CSS'te kaydetmede biçimlendirme kapalı.
+  //
+  // Sebep somut: biçimlendirici `@apply` içindeki `[...]` değerlerinin
+  // virgüllerinden sonra boşluk ekliyor. Tailwind sınıfları boşlukla
+  // ayırdığı için `transition-[background-color, color]` iki ayrı sınıfa
+  // bölünüyor ve derleme "Cannot apply unknown utility class" ile düşüyor —
+  // navbar.css'te dokuz satırı birden bozdu.
+  //
+  // Yalnızca CSS için; diğer dillerde biçimlendirme dokunulmadan duruyor.
+  "[css]": {
+    "editor.formatOnSave": false
+  }
+}

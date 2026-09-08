@@ -1,0 +1,522 @@
+[
+  {
+    "id": "01",
+    "slug": "elixir-alchimie",
+    "brand": "Elixir",
+    "campaign": "L’Alchimie",
+    "category": "FRAGRANCE",
+    "year": "2024",
+    "featured": true,
+    "client": "Elixir Parfums — Paris",
+    "format": "Film 60″ · Cutdowns 30″ / 15″ · Social 9:16",
+    "videoSrc": "/videos/elixir.webm",
+    "loopSrc": "/videos/loop/elixir.webm",
+    "fullSrc": "/videos/full/elixir.webm",
+    "poster": "/videos/posters/elixir.jpg",
+    "wide": "/videos/posters/wide/elixir.jpg",
+    "highlight": "One unbroken pour. No cuts inside it, no rescue in the edit.",
+    "summary": "A fragrance is a claim about time. We built the film around a single unbroken pour — glass, resin and light behaving like a slow chemical argument — and let the product arrive only once the eye had already accepted the ritual.",
+    "approach": "No cuts inside the pour. The camera holds while the liquid does the acting, so the viewer reads patience as luxury rather than being told it. Everything else — grade, sound, type — was tuned down until the pour was the loudest thing on screen.",
+    "services": [
+      "Creative Direction",
+      "Film Production",
+      "Art Direction",
+      "Colour Grading",
+      "Sound Design"
+    ],
+    "credits": [
+      {
+        "role": "Direction",
+        "name": "Camille Rouvier"
+      },
+      {
+        "role": "Photography",
+        "name": "Anaïs Delacroix"
+      },
+      {
+        "role": "Production Design",
+        "name": "Matthieu Bonnet"
+      },
+      {
+        "role": "Edit",
+        "name": "Léa Marchand"
+      },
+      {
+        "role": "Colour",
+        "name": "Julien Ferrand"
+      },
+      {
+        "role": "Sound",
+        "name": "Studio Grisaille"
+      }
+    ]
+  },
+  {
+    "id": "02",
+    "slug": "tom-ford-or-liquide",
+    "brand": "Tom Ford",
+    "campaign": "Or Liquide",
+    "category": "FRAGRANCE",
+    "year": "2024",
+    "featured": true,
+    "client": "Tom Ford Beauty — EMEA",
+    "format": "Film 45″ · Cutdowns 20″ / 10″ · Print stills",
+    "videoSrc": "/videos/tom-ford.webm",
+    "loopSrc": "/videos/loop/tom-ford.webm",
+    "fullSrc": "/videos/full/tom-ford.webm",
+    "poster": "/videos/posters/tom-ford.jpg",
+    "wide": "/videos/posters/wide/tom-ford.jpg",
+    "highlight": "Silver instead of gold. Two values, one practical light.",
+    "summary": "Silver, not gold. The brief asked for opulence; we answered with restraint — a monochrome set, one practical light, and a bottle that behaves like a piece of hardware rather than a jewel.",
+    "approach": "We stripped the palette to two values and let metal do the work. The only warmth in the film is the skin, which makes the product read cold and deliberate — closer to an object of design than a beauty product.",
+    "services": [
+      "Creative Direction",
+      "Film Production",
+      "Set Design",
+      "Colour Grading",
+      "Retouching"
+    ],
+    "credits": [
+      {
+        "role": "Direction",
+        "name": "Camille Rouvier"
+      },
+      {
+        "role": "Photography",
+        "name": "Tobias Lindqvist"
+      },
+      {
+        "role": "Production Design",
+        "name": "Matthieu Bonnet"
+      },
+      {
+        "role": "Edit",
+        "name": "Léa Marchand"
+      },
+      {
+        "role": "Colour",
+        "name": "Julien Ferrand"
+      },
+      {
+        "role": "Sound",
+        "name": "Studio Grisaille"
+      }
+    ]
+  },
+  {
+    "id": "03",
+    "slug": "cadillac-lyriq-noire",
+    "brand": "Cadillac",
+    "campaign": "Lyriq Noire",
+    "category": "AUTOMOTIVE",
+    "year": "2025",
+    "featured": true,
+    "client": "Cadillac Europe",
+    "format": "Film 60″ · Cutdowns 30″ / 6″ · OOH motion",
+    "videoSrc": "/videos/cadillac.webm",
+    "loopSrc": "/videos/loop/cadillac.webm",
+    "fullSrc": "/videos/full/cadillac.webm",
+    "poster": "/videos/posters/cadillac.jpg",
+    "wide": "/videos/posters/wide/cadillac.jpg",
+    "highlight": "Scored before it was shot. The picture was cut to the sound.",
+    "summary": "An electric car makes no sound, so the film had to. We built the entire soundtrack from room tone, tyre contact and breath — then cut the picture to that, not the other way round.",
+    "approach": "Sound-first edit. The board was scored before it was shot, and every camera move was timed to a beat that already existed. Silence became the product feature.",
+    "services": [
+      "Creative Direction",
+      "Film Production",
+      "Sound Design",
+      "Colour Grading",
+      "Motion Graphics"
+    ],
+    "credits": [
+      {
+        "role": "Direction",
+        "name": "Idris Ferhat"
+      },
+      {
+        "role": "Photography",
+        "name": "Anaïs Delacroix"
+      },
+      {
+        "role": "Line Production",
+        "name": "Maison Cardinal"
+      },
+      {
+        "role": "Edit",
+        "name": "Léa Marchand"
+      },
+      {
+        "role": "Colour",
+        "name": "Julien Ferrand"
+      },
+      {
+        "role": "Sound",
+        "name": "Studio Grisaille"
+      }
+    ]
+  },
+  {
+    "id": "04",
+    "slug": "bmw-m3-force-brutale",
+    "brand": "BMW M3",
+    "campaign": "Force Brutale",
+    "category": "AUTOMOTIVE",
+    "year": "2025",
+    "featured": true,
+    "client": "BMW M — France",
+    "format": "Film 30″ · Cutdowns 15″ / 6″ · Social 9:16",
+    "videoSrc": "/videos/bmw.webm",
+    "loopSrc": "/videos/loop/bmw.webm",
+    "fullSrc": "/videos/full/bmw.webm",
+    "poster": "/videos/posters/bmw.jpg",
+    "wide": "/videos/posters/wide/bmw.jpg",
+    "highlight": "Thirty seconds, no beauty pass. Not one locked-off hero shot.",
+    "summary": "Thirty seconds, no beauty passes. The car is shot the way a fighter is shot — close, uncomfortable, mid-effort — and the grade keeps the concrete grey so the paint has nothing to compete with.",
+    "approach": "Everything handheld or rigged hard to the body. We refused a single locked-off hero shot; the absence of one is what makes the last frame land.",
+    "services": [
+      "Creative Direction",
+      "Film Production",
+      "Vehicle Rigging",
+      "Colour Grading",
+      "Sound Design"
+    ],
+    "credits": [
+      {
+        "role": "Direction",
+        "name": "Idris Ferhat"
+      },
+      {
+        "role": "Photography",
+        "name": "Tobias Lindqvist"
+      },
+      {
+        "role": "Precision Driving",
+        "name": "Renaud Pichot"
+      },
+      {
+        "role": "Edit",
+        "name": "Sofia Almeida"
+      },
+      {
+        "role": "Colour",
+        "name": "Julien Ferrand"
+      },
+      {
+        "role": "Sound",
+        "name": "Studio Grisaille"
+      }
+    ]
+  },
+  {
+    "id": "05",
+    "slug": "weekday-urban-spirit",
+    "brand": "Weekday",
+    "campaign": "Urban Spirit",
+    "category": "FASHION",
+    "year": "2025",
+    "featured": true,
+    "client": "Weekday — Nordics",
+    "format": "Film 40″ · Social 9:16 · Lookbook stills",
+    "videoSrc": "/videos/weekday.webm",
+    "loopSrc": "/videos/loop/weekday.webm",
+    "fullSrc": "/videos/full/weekday.webm",
+    "poster": "/videos/posters/weekday.jpg",
+    "wide": "/videos/posters/wide/weekday.jpg",
+    "highlight": "Cast for three days, written after. Nothing in it looks directed.",
+    "summary": "Cast before concept. We spent three days finding six people and then wrote the film around how they actually moved, which is why nothing in it looks directed.",
+    "approach": "Available light, real locations, one lens. The clothes are never the subject of a shot — they are simply always present, which is how people wear them.",
+    "services": [
+      "Creative Direction",
+      "Casting",
+      "Film Production",
+      "Photography",
+      "Colour Grading"
+    ],
+    "credits": [
+      {
+        "role": "Direction",
+        "name": "Sofia Almeida"
+      },
+      {
+        "role": "Photography",
+        "name": "Tobias Lindqvist"
+      },
+      {
+        "role": "Styling",
+        "name": "Nour Benali"
+      },
+      {
+        "role": "Casting",
+        "name": "Atelier Vingt"
+      },
+      {
+        "role": "Colour",
+        "name": "Julien Ferrand"
+      },
+      {
+        "role": "Sound",
+        "name": "Studio Grisaille"
+      }
+    ]
+  },
+  {
+    "id": "06",
+    "slug": "ysl-la-nuit",
+    "brand": "YSL",
+    "campaign": "La Nuit",
+    "category": "FASHION",
+    "year": "2025",
+    "featured": true,
+    "client": "Yves Saint Laurent — Paris",
+    "format": "Film 30″ · Cutdowns 15″ / 6″ · OOH motion",
+    "videoSrc": "/videos/ysl.webm",
+    "loopSrc": "/videos/loop/ysl.webm",
+    "fullSrc": "/videos/full/ysl.webm",
+    "poster": "/videos/posters/ysl.jpg",
+    "wide": "/videos/posters/wide/ysl.jpg",
+    "highlight": "Two stops under, graded up. The noise stays in.",
+    "summary": "The house archive is full of night. We shot the film at the hour where the city has emptied but not yet gone quiet, and let underexposure carry the mood instead of adding smoke and haze.",
+    "approach": "Two stops under, graded up. The noise stays in — it is the texture of the hour, and cleaning it would have made the film look like a rendering of night rather than night itself.",
+    "services": [
+      "Creative Direction",
+      "Film Production",
+      "Art Direction",
+      "Colour Grading",
+      "Sound Design"
+    ],
+    "credits": [
+      {
+        "role": "Direction",
+        "name": "Camille Rouvier"
+      },
+      {
+        "role": "Photography",
+        "name": "Anaïs Delacroix"
+      },
+      {
+        "role": "Styling",
+        "name": "Nour Benali"
+      },
+      {
+        "role": "Edit",
+        "name": "Sofia Almeida"
+      },
+      {
+        "role": "Colour",
+        "name": "Julien Ferrand"
+      },
+      {
+        "role": "Sound",
+        "name": "Studio Grisaille"
+      }
+    ]
+  },
+  {
+    "id": "07",
+    "slug": "nike-douze-rounds",
+    "brand": "Nike",
+    "campaign": "Douze Rounds",
+    "category": "SPORT",
+    "year": "2025",
+    "featured": false,
+    "client": "Nike — EMEA",
+    "format": "Film 30″ · Cutdowns 15″ / 6″ · Social 9:16",
+    "videoSrc": "/videos/nike.webm",
+    "loopSrc": "/videos/loop/nike.webm",
+    "fullSrc": "/videos/full/nike.webm",
+    "poster": "/videos/posters/nike.jpg",
+    "wide": "/videos/posters/wide/nike.jpg",
+    "highlight": "Shot in a working gym at four in the morning, with the people who train there.",
+    "summary": "A fight film with no fight in it. The thirty seconds sit entirely in the hours before — hands being wrapped, a walk through wet streets, an old trainer watching from the door. The bell is the last frame.",
+    "approach": "We cast the gym before the athlete. Everyone in the room actually trains there, which is why nobody performs. Available light plus two practicals; the rain is real and we waited three nights for it.",
+    "services": [
+      "Creative Direction",
+      "Casting",
+      "Film Production",
+      "Cinematography",
+      "Colour Grading"
+    ],
+    "credits": [
+      {
+        "role": "Direction",
+        "name": "Idris Ferhat"
+      },
+      {
+        "role": "Photography",
+        "name": "Tobias Lindqvist"
+      },
+      {
+        "role": "Casting",
+        "name": "Atelier Vingt"
+      },
+      {
+        "role": "Edit",
+        "name": "Sofia Almeida"
+      },
+      {
+        "role": "Colour",
+        "name": "Julien Ferrand"
+      },
+      {
+        "role": "Sound",
+        "name": "Studio Grisaille"
+      }
+    ]
+  },
+  {
+    "id": "08",
+    "slug": "oakley-prisme",
+    "brand": "Oakley",
+    "campaign": "Prisme",
+    "category": "EYEWEAR",
+    "year": "2025",
+    "featured": false,
+    "client": "Oakley — Global",
+    "format": "Film 40″ · Cutdowns 20″ / 6″ · Social 9:16",
+    "videoSrc": "/videos/oakley.webm",
+    "loopSrc": "/videos/loop/oakley.webm",
+    "fullSrc": "/videos/full/oakley.webm",
+    "poster": "/videos/posters/oakley.jpg",
+    "wide": "/videos/posters/wide/oakley.jpg",
+    "highlight": "The lens is the camera. The mountain arrives already tinted.",
+    "summary": "Sport eyewear is usually filmed from the outside. We put the camera where the lens is: the mountain arrives already tinted, already sharpened, and the product never has to be explained.",
+    "approach": "Two units — one on the runner, one flying the same line thirty seconds ahead. The prism breaks were shot in camera on a rotating rig; nothing in the film is a flare added afterwards.",
+    "services": [
+      "Creative Direction",
+      "Film Production",
+      "Cinematography",
+      "CGI & VFX",
+      "Colour Grading"
+    ],
+    "credits": [
+      {
+        "role": "Direction",
+        "name": "Sofia Almeida"
+      },
+      {
+        "role": "Photography",
+        "name": "Anaïs Delacroix"
+      },
+      {
+        "role": "Aerial Unit",
+        "name": "Maison Cardinal"
+      },
+      {
+        "role": "Edit",
+        "name": "Léa Marchand"
+      },
+      {
+        "role": "Colour",
+        "name": "Julien Ferrand"
+      },
+      {
+        "role": "Sound",
+        "name": "Studio Grisaille"
+      }
+    ]
+  },
+  {
+    "id": "09",
+    "slug": "sony-heures-silencieuses",
+    "brand": "Sony",
+    "campaign": "Heures Silencieuses",
+    "category": "TECHNOLOGY",
+    "year": "2024",
+    "featured": false,
+    "client": "Sony — Europe",
+    "format": "Film 60″ · Cutdowns 30″ / 15″ · Print stills",
+    "videoSrc": "/videos/sony.webm",
+    "loopSrc": "/videos/loop/sony.webm",
+    "fullSrc": "/videos/full/sony.webm",
+    "poster": "/videos/posters/sony.jpg",
+    "wide": "/videos/posters/wide/sony.jpg",
+    "highlight": "A library after hours, lit by six desk lamps and nothing else.",
+    "summary": "A camera film shot in the dark on purpose. One library, six desk lamps, no fill — the whole point was to see what survives at the bottom of the exposure.",
+    "approach": "Nothing was added in the grade that was not on set. We lit for the sensor rather than for the eye, then let the wood and the green shades do the colour work themselves.",
+    "services": [
+      "Creative Direction",
+      "Film Production",
+      "Cinematography",
+      "Colour Grading",
+      "Sound Design"
+    ],
+    "credits": [
+      {
+        "role": "Direction",
+        "name": "Camille Rouvier"
+      },
+      {
+        "role": "Photography",
+        "name": "Tobias Lindqvist"
+      },
+      {
+        "role": "Production Design",
+        "name": "Matthieu Bonnet"
+      },
+      {
+        "role": "Edit",
+        "name": "Léa Marchand"
+      },
+      {
+        "role": "Colour",
+        "name": "Julien Ferrand"
+      },
+      {
+        "role": "Sound",
+        "name": "Studio Grisaille"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "slug": "uber-chez-soi",
+    "brand": "Uber",
+    "campaign": "Chez Soi",
+    "category": "LIFESTYLE",
+    "year": "2024",
+    "featured": false,
+    "client": "Uber — France",
+    "format": "Film 45″ · Cutdowns 20″ / 6″ · Social 9:16",
+    "videoSrc": "/videos/uber.webm",
+    "loopSrc": "/videos/loop/uber.webm",
+    "fullSrc": "/videos/full/uber.webm",
+    "poster": "/videos/posters/uber.jpg",
+    "wide": "/videos/posters/wide/uber.jpg",
+    "highlight": "One table, one unbroken meal. The phone appears once.",
+    "summary": "The product is a phone, so we kept the phone off screen for forty seconds. What is on screen is a table, a bad week, and a meal that arrives without anyone having to get dressed.",
+    "approach": "Shot as one dinner, in order, across a single evening. The cast ate the food for real — which is why the rhythm of the film is the rhythm of a meal and not of an edit.",
+    "services": [
+      "Creative Direction",
+      "Casting",
+      "Film Production",
+      "Art Direction",
+      "Sound Design"
+    ],
+    "credits": [
+      {
+        "role": "Direction",
+        "name": "Sofia Almeida"
+      },
+      {
+        "role": "Photography",
+        "name": "Anaïs Delacroix"
+      },
+      {
+        "role": "Production Design",
+        "name": "Matthieu Bonnet"
+      },
+      {
+        "role": "Casting",
+        "name": "Atelier Vingt"
+      },
+      {
+        "role": "Colour",
+        "name": "Julien Ferrand"
+      },
+      {
+        "role": "Sound",
+        "name": "Studio Grisaille"
+      }
+    ]
+  }
+]

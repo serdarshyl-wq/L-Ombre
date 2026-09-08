@@ -1,0 +1,140 @@
+@layer components {
+
+  .nav {
+    --nav-ink: var(--color-bone);
+    --nav-ink-dim: color-mix(in oklab, var(--color-bone) 60%, transparent);
+    --nav-paper: transparent;
+    --nav-cta-bg: transparent;
+
+    @apply fixed inset-x-0 top-0 z-100 grid grid-cols-2 items-center
+      min-h-(--nav-h) font-sans
+      bg-(--nav-paper) text-(--nav-ink)
+      transition-colors duration-450 ease-[ease]
+      transform-[translateY(-100%)] will-change-transform
+      max-tablet:flex max-tablet:px-gutter;
+  }
+
+  .nav[data-solid="true"] {
+    --nav-ink: var(--color-obsidian);
+    --nav-ink-dim: color-mix(in oklab, var(--color-obsidian) 55%, transparent);
+    --nav-paper: var(--color-bone);
+    --nav-cta-bg: var(--color-obsidian);
+  }
+
+  .nav[data-menu="true"] {
+    --nav-ink: var(--color-bone);
+    --nav-ink-dim: color-mix(in oklab, var(--color-bone) 60%, transparent);
+    --nav-paper: transparent;
+    --nav-cta-bg: transparent;
+  }
+
+  .nav__col {
+    @apply flex min-w-0 items-center justify-center
+      gap-[clamp(1.5rem,3.2vw,3.25rem)]
+      max-tablet:hidden;
+  }
+
+  .nav__link {
+    @apply text-[clamp(0.75rem,0.95vw,0.9375rem)] tracking-[0.18em] uppercase
+      whitespace-nowrap text-(--nav-ink-dim)
+      transition-colors duration-350 ease-[ease]
+      hover:text-(--nav-ink) focus-visible:text-(--nav-ink);
+  }
+
+  .nav__mark {
+    @apply absolute top-1/2 left-1/2
+      translate-x-[calc(-50%+0.1em)] -translate-y-1/2
+      text-[clamp(1.25rem,1.6vw,1.625rem)] font-semibold tracking-[0.2em]
+      uppercase whitespace-nowrap
+      max-mobile:text-[clamp(0.9375rem,4vw,1.125rem)]
+      max-tablet:static max-tablet:min-w-0 max-tablet:flex-1
+      max-tablet:translate-none max-tablet:text-center;
+  }
+
+  .cta {
+    @apply absolute top-1/2 right-gutter -translate-y-1/2
+      shrink-0 cursor-pointer overflow-clip
+      border border-(--nav-ink) px-[1.7em] py-[0.95em]
+      bg-(--nav-cta-bg) text-bone
+      text-[clamp(0.75rem,0.95vw,0.9375rem)] tracking-[0.18em] uppercase
+      whitespace-nowrap
+      transition-colors duration-450 ease-[ease]
+      max-mobile:text-[0.625rem] max-mobile:tracking-[0.14em]
+      max-mobile:px-[1em] max-mobile:py-[0.75em]
+      max-tablet:static max-tablet:translate-none;
+  }
+
+  .cta__fill {
+    @apply absolute inset-0 origin-bottom bg-bone scale-y-0
+      transition-transform duration-550 ease-[cubic-bezier(0.65,0,0.35,1)]
+      motion-reduce:transition-none
+      group-hover:scale-y-100 group-focus-visible:scale-y-100;
+  }
+
+  .nav__burger {
+    @apply relative z-10 hidden h-4 w-7 shrink-0 cursor-pointer
+      text-(--nav-ink) max-tablet:block;
+  }
+
+  .nav__burger-line {
+    @apply absolute inset-x-0 block h-px bg-current
+      transition-transform duration-500 ease-[cubic-bezier(0.65,0,0.35,1)]
+      motion-reduce:transition-none;
+  }
+
+  .nav__burger-line:first-of-type {
+    @apply top-1.25;
+  }
+
+  .nav__burger-line:last-of-type {
+    @apply top-2.75;
+  }
+
+  .nav[data-menu="true"] .nav__burger-line:first-of-type {
+    @apply translate-y-0.75 rotate-45;
+  }
+
+  .nav[data-menu="true"] .nav__burger-line:last-of-type {
+    @apply -translate-y-0.75 -rotate-45;
+  }
+
+  .menu {
+    @apply pointer-events-none fixed inset-x-0 top-0 -z-10 h-svh overflow-clip
+      tablet:hidden;
+  }
+
+  .menu[data-open="true"] {
+    @apply pointer-events-auto;
+  }
+
+  .menu__sheet {
+    @apply absolute inset-0 -translate-y-full bg-obsidian
+      transition-transform duration-500 ease-[cubic-bezier(0.65,0,0.35,1)]
+      will-change-transform motion-reduce:transition-none;
+  }
+
+  .menu[data-open="true"] .menu__sheet {
+    @apply translate-y-0 duration-750;
+  }
+
+  .menu__body {
+    @apply relative flex h-full flex-col justify-center
+      px-gutter pt-(--nav-h) pb-gutter;
+  }
+
+  .menu__row {
+    @apply overflow-clip;
+  }
+
+  .menu__link {
+    @apply block translate-y-[110%] py-[clamp(0.35rem,1.2vh,0.75rem)]
+      font-display text-[clamp(2.5rem,11vw,5rem)] leading-[1.05] font-[350]
+      tracking-[-0.03em] uppercase text-bone
+      transition-transform duration-400 ease-[cubic-bezier(0.65,0,0.35,1)]
+      will-change-transform motion-reduce:transition-none;
+  }
+
+  .menu[data-open="true"] .menu__link {
+    @apply translate-y-0 duration-600 delay-[calc(260ms+var(--i)*70ms)];
+  }
+}

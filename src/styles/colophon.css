@@ -1,0 +1,80 @@
+@layer components {
+  /* Modal açıkken sayfa kaymasın.
+     Lenis'in `stop()`'u yalnızca kendi yumuşatmasını durduruyor, tarayıcının
+     kendi kaydırmasını değil — ölçtük, tekerlek arka planı 1800px kaydırdı.
+     Belgeyi kaydırılamaz yapmak tek güvenilir kilit. */
+  html:has(.colophon[open]) {
+    @apply overflow-hidden;
+  }
+
+  .colophon {
+    @apply m-auto w-[min(30rem,calc(100vw-2*var(--spacing-gutter)))] max-h-[85svh]
+      overflow-y-auto border border-hairline bg-obsidian p-0 text-bone
+      translate-y-3 opacity-0
+      transition-[opacity,translate] duration-500
+      ease-[cubic-bezier(0.65,0,0.35,1)]
+      motion-reduce:transition-none;
+  }
+
+  .colophon[data-shown="true"] {
+    @apply translate-y-0 opacity-100;
+  }
+
+  .colophon::backdrop {
+    @apply bg-obsidian/85 opacity-0 transition-opacity duration-500
+      ease-[cubic-bezier(0.65,0,0.35,1)] motion-reduce:transition-none;
+  }
+
+  .colophon[data-shown="true"]::backdrop {
+    @apply opacity-100;
+  }
+
+  .colophon__panel {
+    @apply flex flex-col items-start gap-[clamp(0.75rem,2vh,1.15rem)]
+      p-[clamp(1.75rem,5vw,2.75rem)];
+  }
+
+  .colophon__eyebrow {
+    @apply text-[clamp(0.625rem,0.8vw,0.75rem)] tracking-[0.22em] uppercase
+      opacity-40;
+  }
+
+  .colophon__lede {
+    @apply font-display text-[clamp(1.5rem,4.5vw,2.25rem)] leading-[1.1]
+      font-[350] tracking-[-0.02em];
+  }
+
+  .colophon__body {
+    @apply max-w-[46ch] text-[clamp(0.875rem,1.05vw,1rem)] leading-[1.65]
+      opacity-70;
+  }
+
+  .colophon__links {
+    @apply mt-[clamp(0.35rem,1vh,0.75rem)] flex flex-wrap items-baseline
+      gap-x-[0.85em] gap-y-2 font-display
+      text-[clamp(1.125rem,2.6vw,1.5rem)] font-[350] tracking-[-0.015em];
+  }
+
+  .colophon__links span {
+    @apply opacity-30;
+  }
+
+  .colophon__link {
+    @apply relative inline-block
+      after:absolute after:inset-x-0 after:bottom-[-0.12em] after:h-px
+      after:origin-right after:scale-x-0 after:bg-current after:content-['']
+      after:transition-transform after:duration-500
+      after:ease-[cubic-bezier(0.65,0,0.35,1)]
+      hover:after:origin-left hover:after:scale-x-100
+      focus-visible:after:origin-left focus-visible:after:scale-x-100
+      motion-reduce:after:transition-none;
+  }
+
+  .colophon__close {
+    @apply mt-[clamp(0.75rem,2.5vh,1.5rem)] cursor-pointer
+      text-[clamp(0.625rem,0.8vw,0.75rem)] tracking-[0.22em] uppercase
+      opacity-40 transition-opacity duration-300 ease-[ease]
+      hover:opacity-100 focus-visible:opacity-100
+      motion-reduce:transition-none;
+  }
+}

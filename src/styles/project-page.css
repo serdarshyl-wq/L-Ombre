@@ -1,0 +1,103 @@
+@layer components {
+
+  .pj {
+    --pj-gap: clamp(1.5rem, 4vw, 4rem);
+
+    @apply relative;
+  }
+
+  .pj__frame {
+
+    @apply sticky top-0 flex h-svh items-center overflow-clip p-gutter
+      max-[900px]:pt-(--nav-h);
+  }
+
+  .pj__grid {
+    @apply grid h-full w-full items-stretch grid-cols-[60fr_40fr]
+      gap-x-(--pj-gap)
+      max-[900px]:grid-cols-1 max-[900px]:grid-rows-[auto_1fr]
+      max-[900px]:gap-y-[clamp(1.1rem,3vh,1.75rem)];
+  }
+
+  .pj__film {
+    @apply flex min-w-0 items-center;
+  }
+
+  .pj__rail {
+    @apply relative min-w-0 overflow-clip;
+  }
+
+  .pj__reel {
+    @apply absolute inset-x-0 top-0 will-change-transform;
+  }
+
+  .pj__aside {
+    @apply flex flex-col items-start justify-center gap-3
+      min-h-[calc(100svh-2*var(--spacing-gutter))]
+      max-[900px]:min-h-0 max-[900px]:justify-start;
+  }
+
+  .pj__id {
+    @apply text-[clamp(0.625rem,0.8vw,0.75rem)] tracking-[0.22em] opacity-35;
+  }
+
+  .pj__title,
+  .pj__campaign,
+  .pj__category {
+    @apply overflow-visible;
+  }
+
+  .pj__title [data-reveal],
+  .pj__campaign [data-reveal],
+  .pj__category [data-reveal] {
+    @apply block leading-none [clip-path:inset(50%_0%_50%_0%)]
+      will-change-[clip-path,transform];
+  }
+
+  .pj__title {
+    @apply text-[clamp(2.5rem,5.5vw,5.5rem)] font-[350] tracking-[-0.03em];
+  }
+
+  .pj__campaign {
+    @apply font-display text-[clamp(1.25rem,2.2vw,2.25rem)] font-light
+      opacity-70;
+  }
+
+  .pj__category {
+    @apply mt-1 text-[clamp(0.5625rem,0.75vw,0.6875rem)] tracking-[0.22em]
+      opacity-40;
+  }
+
+  .pj__summary {
+    @apply mt-[clamp(1rem,2.5vh,2rem)] max-w-[46ch]
+      text-[clamp(0.875rem,1.05vw,1.0625rem)] leading-[1.6] opacity-70;
+  }
+
+  .pj__facts {
+    @apply grid gap-3 mt-[clamp(1.25rem,3vh,2.5rem)]
+      text-[clamp(0.75rem,0.95vw,0.875rem)];
+  }
+
+  .pj__facts dt {
+    @apply mb-1 text-[0.6875em] tracking-[0.22em] uppercase opacity-40;
+  }
+
+  .pj__facts dd {
+    @apply opacity-85;
+  }
+
+  .pj__stage,
+  .pj__aside,
+  .controls {
+    @apply opacity-0;
+  }
+
+  .pj__stage {
+    @apply relative aspect-video overflow-clip bg-[#141414]
+      w-[min(100%,calc((100svh-2*var(--spacing-gutter))*16/9))];
+  }
+
+  .pj__video {
+    @apply block h-full w-full object-cover;
+  }
+}
