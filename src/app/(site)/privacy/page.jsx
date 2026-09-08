@@ -41,16 +41,24 @@ export default function PrivacyPage() {
         </p>
       </Section>
 
-      <Section title="What the site collects on its own">
+      <Section title="What the site records on its own">
         <p>
-          Nothing. No cookies are set. Nothing is written to your browser’s
-          local or session storage. No request leaves for a third-party server —
-          every font, image and video is served from this domain, so no one else
-          sees that you were here.
+          One thing: it counts visits, using Vercel Web Analytics. That tells me
+          which pages are being opened, how many people opened them, roughly
+          which country they were in, and which browser and device they used. It
+          is how I know whether anyone is reading this at all.
         </p>
         <p>
-          There is no analytics, no advertising or remarketing tag, no social
-          embed and no tracking pixel.
+          It sets no cookies, and nothing is written to your browser’s local or
+          session storage. The counter is served from this domain rather than a
+          third party’s, so no other company is handed your visit along the way
+          — the same is true of every font, image and video here.
+        </p>
+        <p>
+          What comes out of it is a tally, not a profile. You are not
+          identified, not followed from site to site, and nothing is sold or
+          shared with anyone. There is no advertising or remarketing tag, no
+          social embed and no third-party tracking pixel.
         </p>
       </Section>
 

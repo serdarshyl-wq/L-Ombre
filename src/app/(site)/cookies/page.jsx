@@ -36,12 +36,22 @@ export default function CookiesPage() {
         </p>
       </Section>
 
-      <Section title="No measurement, no advertising">
+      <Section title="Counting, but not with cookies">
         <p>
-          There is no analytics script, no advertising or remarketing tag, no
-          social embed, and no third-party font or player. Every asset — type,
-          images, video — is served from this domain. Nothing on these pages
-          causes your browser to contact another company’s server.
+          Visits are counted, using Vercel Web Analytics. It reports how many
+          people opened which page, roughly which country they were in, and
+          which browser they used. That is the whole of it — a tally, not a
+          profile, and nothing that identifies you.
+        </p>
+        <p>
+          It sets no cookies and writes nothing to your browser. The script that
+          does the counting is served from this domain rather than someone
+          else’s, so your visit is not handed to another company on the way.
+        </p>
+        <p>
+          There is no advertising or remarketing tag, no social embed and no
+          third-party font or player. Every asset — type, images, video, and the
+          counter itself — comes from this domain.
         </p>
       </Section>
 

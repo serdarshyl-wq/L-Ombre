@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Colophon from "@/components/Colophon";
 import { ORG, SITE_ID } from "@/lib/schema";
+import { Analytics } from "@vercel/analytics/next";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
@@ -39,6 +40,7 @@ export default function SiteLayout({ children }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <Analytics />
       <SmoothScroll>
         <Navbar />
         {children}
